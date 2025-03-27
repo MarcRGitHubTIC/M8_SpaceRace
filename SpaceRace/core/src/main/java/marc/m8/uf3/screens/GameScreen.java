@@ -16,6 +16,7 @@ import java.util.ArrayList;
 import marc.m8.uf3.actors.Asteroid;
 import marc.m8.uf3.actors.ScrollHandler;
 import marc.m8.uf3.actors.Spacecraft;
+import marc.m8.uf3.helpers.AssetManager;
 import marc.m8.uf3.utils.Settings;
 
 public class GameScreen implements Screen{
@@ -51,6 +52,8 @@ public class GameScreen implements Screen{
         stage.addActor(scrollHandler);
 
         stage.addActor(spacecraft);
+
+        AssetManager.music.play();
 
     }
 
